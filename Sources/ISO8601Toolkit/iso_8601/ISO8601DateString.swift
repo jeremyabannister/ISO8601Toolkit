@@ -6,7 +6,7 @@
 //
 
 ///
-public struct ISO8601DateString: Codable, Hashable {
+public struct ISO8601DateString: Codable, Hashable, Sendable {
     
     ///
     public var date: Date

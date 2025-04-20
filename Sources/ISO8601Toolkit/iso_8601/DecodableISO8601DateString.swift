@@ -6,7 +6,7 @@
 //
 
 ///
-public struct DecodableISO8601DateString: Decodable, Hashable {
+public struct DecodableISO8601DateString: Decodable, Hashable, Sendable {
     
     ///
     public let date: Date
