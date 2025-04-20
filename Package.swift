@@ -16,15 +16,15 @@ let package = Package(
         
         ///
         .package(
-            url: "https://github.com/jeremyabannister/ErrorMessage-module",
-            from: "0.1.0"
+            url: "https://github.com/jeremyabannister/ErrorMessage-package",
+            .upToNextMinor(from: "0.1.2")
         ),
     ],
     targets: [
         .target(
             name: "ISO8601Toolkit",
             dependencies: [
-                "ErrorMessage-module",
+                .product(name: "ErrorMessage-module", package: "ErrorMessage-package"),
             ]
         ),
         .testTarget(
